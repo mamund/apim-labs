@@ -17,7 +17,7 @@ curl "http://sandbox.example.org/rvs/ POST -d 'rid=q1w2e3&customer=smith&request
 You should see the following response:
 
 ```
-OK 200 : You just created your first Request for Vehcile Service!
+OK 200 : You just created your first Request for Vehicle Service!
 ```
 
 ## Getting an API Key
