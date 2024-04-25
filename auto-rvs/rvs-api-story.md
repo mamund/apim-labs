@@ -15,8 +15,8 @@ An RVS record consists of the following data properties:
 * RID (RVS identifier)
 * CID (Customer identifier)
 * VIN (Vehicle identification number)
-* SSID (Service Staff identifier)
-* SID (Service Work Record)
+* SSID (Service Staff identifier)  more than one SSID can be attached
+* SID (Service Work Record) more then one SID can be attached
 * Customer Name (open text, resolved against CID)
 * Requested Work (open text, multi-line)
 * Status (`pending`, `working`, `completed`, `cancelled`) defaults to pending
@@ -28,13 +28,16 @@ An RVS record consists of the following data properties:
 * RID is generated when the record is created
 * CID is added after the customer creates the record. Initially, customer only adds their name.
 * VIN is standardized data point (NHTSA, 1954)
-* SSID is a pointer to an existing Service Staff record (see below)
-* SID is a pointer to an existing Service Work Record created by Service staff (see below)
+* SSID is a pointer to an existing Service Staff record. More than ond SSID can be attached to an exisitng RVS. 
+* SID is a pointer to an existing Service Work Record created by Service staff. More than one SWR can be attached to an existing RVS.
 * Customer Name is open-text field filled in by customer, updated by Service Staff
 * Requested work is open-text, multi-line field filled in by customer
 * Status is set to `pending` when RVS is created. It is modified by Service staff (`working`, `completed`, `cancelled`). Customers can mark a `pending` record as `cancelled`.
 * DateCreated is the UTC date/time the RVS was first created
 * DateUpdated is the UTC date/time the RVS as modifed in any way
+
+### Customer Record (CR)
+The CID belongs to the Customer Record (CR). Manageing CRs is a separate process covered elsewhere in this documentation.
 
 ### Service Staff Record (SSR)
 The SSID belongs to the Service Staff Record (SSR). Manging SSRs is a separate process covered elsewhere in this documentaiton.
