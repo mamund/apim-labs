@@ -6,7 +6,7 @@ We use the Request for Vehicle Service (RVS) process to manage customer requests
 ## Actions
 There are two personas for the RVS process: Customers and Service Staff.
 
-Customers can create a new RVS record, update an exsiting RVS (as long as it is not in progress), cancel an existing  RVS (as long as it is not in progress), and list existing  RVS records (including filtering by date, vehicle ID, and status)
+Customers can create a new RVS record, update an exsiting RVS (if status is set to `pending`), cancel an existing  RVS (if status is set to `pending`), and list existing  RVS records (including filtering by date, vehicle ID, and status)
 
 Service Staff can update an existing RVS record, assign a Customer (via CID) to an existing RVS record, assign one or more Service staff members (via SSIDs) to an existing RVS record, change the status of an existing RVS record (pending, working, completed, cancelled), attach an existing Service Work Record (SWR) to an existing RVS record (see below).
 
