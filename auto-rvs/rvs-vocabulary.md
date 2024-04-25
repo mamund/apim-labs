@@ -17,7 +17,7 @@
 * CID [UUID]
 * VIN [NHTSA, 1954]
 * SID [UUID] [array] 
-* SSID [UUID] [array]
+* WID [UUID] [array]
 * Status (`pending`, `working`, `completed`, `cancelled`)
 * CustomerName [text]
 * RequestedWork [multi-line text]
