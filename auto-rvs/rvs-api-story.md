@@ -4,25 +4,14 @@
 We use the Request for Vehicle Service (RVS) process to manage customer requests for maintainence of thier vehicle.
 
 ## Actions
-There are two personas for the RVS process:
-* Customers
-* Service Staff
+There are two personas for the RVS process: Customers and Service Staff.
 
-### Customers can do the following:
-* Create a new RVS
-* Update and exsiting RVS (as long as it is not in progress)
-* Cancel an existing  RVS (as long as it is not in progress)
-* List previous RVS documents (including filtering by date, vehicle ID, and status)
+Customers can create a new RVS record, update an exsiting RVS (as long as it is not in progress), cancel an existing  RVS (as long as it is not in progress), and list existing  RVS records (including filtering by date, vehicle ID, and status)
 
-### Service Staff can do the following:
-* Update an existing RVS
-* Assign CID to an existing RVS
-* Assign SSID (Service Staff identifier) to an existing RVS
-* Change the status of an existing RVS (pending, working, completed, cancelled)
-* Attach an existing Service Work Record (SWR) to an existing RVS (see below)
+Service Staff can update an existing RVS record, assign a Customer (via CID) to an existing RVS record, assign one or more Service staff members (via SSIDs) to an existing RVS record, change the status of an existing RVS record (pending, working, completed, cancelled), attach an existing Service Work Record (SWR) to an existing RVS record (see below).
 
 ## Data
-And RVS record consists of the following:
+An RVS record consists of the following data properties:
 * RID (RVS identifier)
 * CID (Customer identifier)
 * VIN (Vehicle identification number)
@@ -48,12 +37,12 @@ And RVS record consists of the following:
 * DateUpdated is the UTC date/time the RVS as modifed in any way
 
 ### Service Staff Record (SSR)
-This is a separate process covered elsewhere in this documentaiton.
+The SSID belongs to the Service Staff Record (SSR). Manging SSRs is a separate process covered elsewhere in this documentaiton.
 
-### Service Work Record
-This is a separate process covered elsewhere in this documentation. 
+### Service Work Record (SWR)
+The SID belongs to the Service Work Record (SWR). Managing SWRs is a separate process covered elsewhere in this documentation. 
 
-## Work
+## Other Considerations
 * Listing RVS records should support paging (`first`, `previous`, `next`, `last`).
 * Filtering the list of RVS records support support:
   * DateCreated (UTC)
