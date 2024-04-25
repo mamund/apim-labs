@@ -31,6 +31,7 @@ And RVS record consists of the following:
 * Customer Name (open text, resolved against CID)
 * Requested Work (open text, multi-line)
 * Status (`pending`, `working`, `completed`, `cancelled`) defaults to pending
+* Notes (open text, mult-line) for Service Staff comments
 * DateCreated
 * DateUpdated
 
