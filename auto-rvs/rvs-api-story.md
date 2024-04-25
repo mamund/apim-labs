@@ -14,7 +14,7 @@ There are two personas for the RVS process:
 * Cancel an existing  RVS (as long as it is not in progress)
 * List previous RVS documents (including filtering by date, vehicle ID, and status)
 
-### Service Staff can:
+### Service Staff can do the following:
 * Update an existing RVS
 * Assign CID to an existing RVS
 * Assign SSID (Service Staff identifier) to an existing RVS
