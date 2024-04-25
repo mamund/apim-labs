@@ -23,6 +23,8 @@ OK 200 : You just created your first Request for Vehicle Service!
 ## Getting an API Key
 To get an API Key for the AutoRVS sandbox, just fill out the form below and we'll mail you a valid key.
 
-[Full-Name]
-[email-address]
-[submit]
+- [Full-Name]
+- [email-address]
+
+### NOTE
+You only need an API Key to access the sandbox version of our AutoRVS API. When you're ready to access our production API, you can register for an OAuth token (<a href="#">here</a>).
