@@ -1,0 +1,150 @@
+openapi: 3.0.1
+info:
+  title: List Navigation API
+  version: '1.0'
+  description: API for navigating a list and selecting records using the ALPS diagram.
+
+paths:
+  /list:
+    get:
+      summary: "Navigate to the list"
+      operationId: goList
+      parameters: []
+      responses:
+        '200':
+          description: Successfully navigated to the list.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Navigated to list"
+
+  /list/first:
+    get:
+      summary: "Navigate to the first item in the list"
+      operationId: goFirst
+      parameters: []
+      responses:
+        '200':
+          description: Successfully navigated to the first item.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Navigated to first item"
+
+  /list/last:
+    get:
+      summary: "Navigate to the last item in the list"
+      operationId: goLast
+      parameters: []
+      responses:
+        '200':
+          description: Successfully navigated to the last item.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Navigated to last item"
+
+  /list/next:
+    get:
+      summary: "Navigate to the next item in the list"
+      operationId: goNext
+      parameters: []
+      responses:
+        '200':
+          description: Successfully navigated to the next item.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Navigated to next item"
+
+  /list/previous:
+    get:
+      summary: "Navigate to the previous item in the list"
+      operationId: goPrevious
+      parameters: []
+      responses:
+        '200':
+          description: Successfully navigated to the previous item.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Navigated to previous item"
+
+  /list/select:
+    get:
+      summary: "Select an item in the list"
+      operationId: goSelect
+      parameters: []
+      responses:
+        '200':
+          description: Successfully selected an item in the list.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Selected item"
+
+  /home:
+    get:
+      summary: "Navigate to the home page"
+      operationId: goHome
+      parameters: []
+      responses:
+        '200':
+          description: Successfully navigated to the home page.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Navigated to home"
+
+  /exit:
+    get:
+      summary: "Exit the list"
+      operationId: goExit
+      parameters: []
+      responses:
+        '200':
+          description: Successfully exited the list.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "Exited list"
+
+components:
+  schemas:
+    StatusResponse:
+      type: object
+      properties:
+        status:
+          type: string
