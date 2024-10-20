@@ -90,7 +90,7 @@ paths:
                     type: string
                     example: "Navigated to previous item"
 
-  /list/select:
+  /list/filter:
     get:
       summary: "Select an item in the list"
       operationId: goSelect
