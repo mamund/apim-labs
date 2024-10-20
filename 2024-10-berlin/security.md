@@ -29,7 +29,6 @@ This matrix outlines the security requirements for each endpoint in the List Nav
 |-----------------|-------------|-----------------|--------------|-----------------|
 | `/list`         | GET         | Yes             | Yes          | `list:read`     |
 | `/list`         | POST        | Yes             | Yes          | `list:write`    |
-
 | `/list/filter`  | GET         | Yes             | Yes          | `list:read`    |
 | `/list/{id}`    | GET         | Yes             | Yes          | `list:read`     |
 | `/list/{id}`    | PUT         | Yes             | Yes          | `list:write`    |
